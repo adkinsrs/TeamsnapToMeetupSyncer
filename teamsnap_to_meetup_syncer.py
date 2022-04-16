@@ -11,10 +11,10 @@ import configparser
 import logging
 
 from collections import namedtuple
-from datetime import datetime
+from datetime import datetime, timezone
 
 # NOTE: NOW is initially not timezone aware (naive), so need to add timezone offset to NOW
-NOW = datetime.now(datetime.timezone.utc).astimezone()
+NOW = datetime.now(timezone.utc).astimezone()
 
 TEAMSNAP_API_HREF="https://api.teamsnap.com/v3"
 
