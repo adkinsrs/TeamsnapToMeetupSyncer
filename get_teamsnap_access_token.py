@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-get_teamsnap_auth_token.py - Authorize user to use Teamsnap API.  Returns an access token.
+get_teamsnap_access_token.py - Authorize user to use Teamsnap API.  Returns an access token.
 
 By: Shaun Adkins - (github: adkinsrs)
 """

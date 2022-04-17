@@ -97,9 +97,13 @@ def main():
     parser.add_argument('-c', '--config', help='Path to config file', default='./config.ini')
     parser.add_argument('--sync_maybe', help='Sync "Maybe" events in addition to ones marked "Yes" for attending ', action='store_true')
     parser.add_argument('-v', '--verbose', help='Verbose output', action='store_true')
+    parser.add_argument('-vv', '--very_verbose', help='Very verbose output', action='store_true')
+
     args = parser.parse_args()
 
     if args.verbose:
+        logging.basicConfig(level=logging.INFO)
+    if args.very_verbose:
         logging.basicConfig(level=logging.DEBUG)
 
     config = configparser.ConfigParser()
