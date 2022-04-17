@@ -1,5 +1,7 @@
 # TeamsnapToMeetupSyncer
 
+UPDATE: I am quickly discontinuing this project. I attempted to register for use of the Meetup OAuth API, which was denied because I do not have a paid Meetup Pro account.  Because I refuse to pay a fee to work on a side project like this, I am going to abandon work on it.
+
 I'm tired of having to fill out two different calendars for events.  Let's sync events i'm attending on teamsnap to meetup
 
 ## Steps to take if you are missing certain pieces of information in your config.ini file
@@ -35,3 +37,8 @@ optional arguments:
   -vv, --very_verbose   Very verbose output
 
   ```
+
+## TODO
+
+* Deploy this process as a web app (at least for my club).  This would eliminate the terminal usage in favor of Flask API calls.  I would also have to have the user_id be variable to whomever uses the app, meaning it will be passed outside of the config.ini
+
